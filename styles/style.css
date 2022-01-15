@@ -231,7 +231,17 @@ footer {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+  .contact-left img {
+    width: 100%;
+    height: auto;
+  }
+  .see-more {
+    width: 900px;
+  }
   .see-more a {
+    border: 1px solid red;
+    padding: 10px;
+    width: 90px;
     justify-content: center;
   }
 }
