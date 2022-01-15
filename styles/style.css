@@ -83,7 +83,6 @@ nav {
 }
 .banner-image img {
   width: 440px;
-  height: 414px;
 }
 /*  */
 
@@ -101,11 +100,12 @@ nav {
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  padding: 0 100px;
+  width: 75%;
+  margin: auto;
 }
 
 .card {
+  margin: auto;
   width: 329px;
   height: 476px;
   padding: 17px 15px;
@@ -159,18 +159,16 @@ nav {
 }
 
 .see-more {
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: right;
 }
 .see-more i {
-  margin-top: 6px;
   color: #e02c6dde;
 }
 
 .see-more a {
-  width: 100%;
-  display: flex;
   color: #e02c6dde;
-  justify-content: flex-end;
   text-decoration: none;
 }
 
@@ -201,7 +199,7 @@ footer {
 
 /* Tablet */
 
-@media all and (max-width: 992px) {
+@media all and (min-width: 689px) and (max-width: 992px) {
   .container {
     width: 100%;
   }
@@ -221,58 +219,56 @@ footer {
     width: 100%;
     display: grid;
     gap: 30px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     padding: 0 100px;
   }
   .contact {
-    width: 90%;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
   }
   .contact-left img {
     width: 100%;
     height: auto;
-  }
-  .see-more {
-    width: 900px;
-  }
-  .see-more a {
-    padding: 10px;
-    width: 90px;
-    justify-content: center;
   }
 }
 
 /* Mobile phone */
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 688px) {
   .container {
+    padding: 10px 20px;
     width: 100%;
   }
   .banner {
     width: 100%;
     grid-template-columns: 1fr;
   }
-  nav {
+  .banner-image img {
     width: 100%;
-    text-align: center;
+  }
+  .banner-text {
+    margin: 0;
+    width: 100%;
   }
   .banner-text p {
+    margin: 0;
     width: 100%;
+  }
+  .primary-btn {
+    margin-top: 10px;
   }
 
   .collection {
     width: 100%;
-    display: grid;
-    gap: 30px;
     grid-template-columns: 1fr;
     justify-content: center;
-    padding: 0 100px;
   }
+
   .contact {
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
@@ -280,14 +276,5 @@ footer {
   .contact-left img {
     width: 100%;
     height: auto;
-  }
-  .see-more {
-    width: 900px;
-  }
-  .see-more a {
-    border: 1px solid red;
-    padding: 10px;
-    width: 90px;
-    justify-content: center;
   }
 }
