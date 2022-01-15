@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* Common Styles */
 * {
   margin: 0;
   padding: 0;
@@ -17,14 +18,27 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.fa-arrow-right i {
+.primary-btn {
+  outline: 0;
+  border: 0;
   color: white;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+  border-radius: 25px;
+}
+.section-title {
+  text-align: center;
+}
+.section-title h2 {
+  font-size: 28px;
+  display: inline-block;
+  color: #3a3a3a;
+  margin: 100px 0;
 }
 
-/* Banner */
+/* Banner Style */
 
 .banner {
-  /* min-height: 500px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -68,14 +82,6 @@ nav {
   margin: 20px 0;
 }
 
-.primary-btn {
-  outline: 0;
-  border: 0;
-  color: white;
-  background-color: #e02c6d;
-  padding: 10px 24px;
-  border-radius: 25px;
-}
 .banner-image {
   display: flex;
   justify-content: center;
@@ -84,18 +90,13 @@ nav {
 .banner-image img {
   width: 440px;
 }
-/*  */
-
-.section-title {
-  text-align: center;
-}
-.section-title h2 {
-  font-size: 28px;
-  display: inline-block;
-  color: #3a3a3a;
-  margin: 100px 0;
+.fa-arrow-right i {
+  color: white;
 }
 
+/* Common Style */
+
+/* Collection Styles */
 .collection {
   display: grid;
   gap: 30px;
@@ -126,10 +127,23 @@ nav {
   line-height: 1.5;
 }
 
+.see-more {
+  margin-top: 10px;
+  text-align: right;
+}
+.see-more i {
+  color: #e02c6dde;
+}
+
+.see-more a {
+  color: #e02c6dde;
+  text-decoration: none;
+}
+
 .fa-star {
   color: orange;
 }
-/*  */
+/* Contact Styles */
 
 .contact {
   display: grid;
@@ -158,21 +172,7 @@ nav {
   border: 1px solid #3a3a3a;
 }
 
-.see-more {
-  margin-top: 10px;
-  margin-right: 10px;
-  text-align: right;
-}
-.see-more i {
-  color: #e02c6dde;
-}
-
-.see-more a {
-  color: #e02c6dde;
-  text-decoration: none;
-}
-
-/*  */
+/* Footer */
 
 footer {
   margin-top: 100px;
@@ -197,9 +197,11 @@ footer {
   color: #fff;
 }
 
+/* Responsive Design */
+
 /* Tablet */
 
-@media all and (min-width: 689px) and (max-width: 992px) {
+@media all and (min-width: 689px) and (max-width: 1024px) {
   .container {
     width: 100%;
   }
